@@ -1,0 +1,57 @@
+This is version 2.5 of Statistics::LTU, a module for Linear Threshold Units.
+
+A linear threshold unit is a 1-layer neural network, also called a
+perceptron.  LTU's are used to learn classifications from examples.  An LTU
+learns to distinguish between two classes based on the data given to it.
+After training on a number of examples, the LTU can then be used to
+classify new (unseen) examples.
+
+LTU.pm defines an (uninstantiable) base class, LTU, and four other
+instantiable classes built on top of LTU.  Each of the four classes uses a
+different training method: ACR (absolute correction rule), TACR (a thermal
+annealing version of the absolute correction rule), LMS (least-mean squares
+fit) and RLS (recursive least-mean squares rule).  Check out ltu.doc for
+further information on these.  You can use LTUs without understanding
+exactly how they work.
+
+
+REQUIREMENTS
+
+Statistics::LTU needs Perl version 5, as it is object-oriented and uses
+references extensively.  
+
+
+INSTALLATION
+
+Copy LTU.pm into the Statistics subdirectory where your Perl libraries
+reside.  LTU.man (created from LTU.pod by pod2man) may be copied
+to the directory where you keep man pages.
+
+LTU.pm has some tests at the end; try running "perl LTU.pm".  Note that
+this creates four LTU files with .saved extensions, which can be deleted
+after the tests.
+
+
+
+FILES
+
+ltu.doc has some useful information on LTUs, though it was written for the
+	C version.
+
+LTU.man is the man page derived from LTU.pod.
+
+weather.perl is a simple demo showing how examples are created, and how
+	LTUs are trained and tested.  It should be more instructive than
+	LTU.man.  Run "perl weather.perl | more".
+
+The code itself is heavily documented.
+
+
+
+AUTHOR / SUGGESTIONS / BUG MAGNET
+
+Tom Fawcett (fawcett@nynexst.com).
+
+LTU.pm is based on LTU.C, an implementation of LTUs written by James Callan
+at the University of Massachusetts.  I've tried to Perlify and objectify
+the code completely, but some awkwardness remains.

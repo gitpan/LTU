@@ -1,0 +1,316 @@
+.rn '' }`
+''' $RCSfile$$Revision$$Date$
+''' 
+''' $Log$
+''' 
+.de Sh
+.br
+.if t .Sp
+.ne 5
+.PP
+\fB\\$1\fR
+.PP
+..
+.de Sp
+.if t .sp .5v
+.if n .sp
+..
+.de Ip
+.br
+.ie \\n(.$>=3 .ne \\$3
+.el .ne 3
+.IP "\\$1" \\$2
+..
+.de Vb
+.ft CW
+.nf
+.ne \\$1
+..
+.de Ve
+.ft R
+
+.fi
+..
+'''
+'''
+'''     Set up \*(-- to give an unbreakable dash;
+'''     string Tr holds user defined translation string.
+'''     Bell System Logo is used as a dummy character.
+'''
+.tr \(*W-|\(bv\*(Tr
+.ie n \{\
+.ds -- \(*W-
+.if (\n(.H=4u)&(1m=24u) .ds -- \(*W\h'-12u'\(*W\h'-12u'-\" diablo 10 pitch
+.if (\n(.H=4u)&(1m=20u) .ds -- \(*W\h'-12u'\(*W\h'-8u'-\" diablo 12 pitch
+.ds L" ""
+.ds R" ""
+.ds L' '
+.ds R' '
+'br\}
+.el\{\
+.ds -- \(em\|
+.tr \*(Tr
+.ds L" ``
+.ds R" ''
+.ds L' `
+.ds R' '
+.if t .ds PI \(*p
+.if n .ds PI PI
+'br\}
+.TH LTU 1 "\*(RP"
+.UC
+.if n .hy 0 
+.if n .na
+.ds C+ C\v'-.1v'\h'-1p'\s-2+\h'-1p'+\s0\v'.1v'\h'-1p'
+.de CQ          \" put $1 in typewriter font
+.ft CW
+'if n "\c
+'if t \\&\\$1\c
+'if n \\&\\$1\c
+'if n \&"
+\\&\\$2 \\$3 \\$4 \\$5 \\$6 \\$7
+'.ft R
+..
+.\" @(#)ms.acc 1.5 88/02/08 SMI; from UCB 4.2
+.	\" AM - accent mark definitions
+.bd S B 3
+.	\" fudge factors for nroff and troff
+.if n \{\
+.	ds #H 0
+.	ds #V .8m
+.	ds #F .3m
+.	ds #[ \f1
+.	ds #] \fP
+.\}
+.if t \{\
+.	ds #H ((1u-(\\\\n(.fu%2u))*.13m)
+.	ds #V .6m
+.	ds #F 0
+.	ds #[ \&
+.	ds #] \&
+.\}
+.	\" simple accents for nroff and troff
+.if n \{\
+.	ds ' \&
+.	ds ` \&
+.	ds ^ \&
+.	ds , \&
+.	ds ~ ~
+.	ds ? ?
+.	ds ! !
+.	ds / 
+.	ds q 
+.\}
+.if t \{\
+.	ds ' \\k:\h'-(\\n(.wu*8/10-\*(#H)'\'\h"|\\n:u"
+.	ds ` \\k:\h'-(\\n(.wu*8/10-\*(#H)'\`\h'|\\n:u'
+.	ds ^ \\k:\h'-(\\n(.wu*10/11-\*(#H)'^\h'|\\n:u'
+.	ds , \\k:\h'-(\\n(.wu*8/10)',\h'|\\n:u'
+.	ds ~ \\k:\h'-(\\n(.wu-\*(#H-.1m)'~\h'|\\n:u'
+.	ds ? \s-2c\h'-\w'c'u*7/10'\u\h'\*(#H'\zi\d\s+2\h'\w'c'u*8/10'
+.	ds ! \s-2\(or\s+2\h'-\w'\(or'u'\v'-.8m'.\v'.8m'
+.	ds / \\k:\h'-(\\n(.wu*8/10-\*(#H)'\z\(sl\h'|\\n:u'
+.	ds q o\h'-\w'o'u*8/10'\s-4\v'.4m'\z\(*i\v'-.4m'\s+4\h'\w'o'u*8/10'
+.\}
+.	\" troff and (daisy-wheel) nroff accents
+.ds : \\k:\h'-(\\n(.wu*8/10-\*(#H+.1m+\*(#F)'\v'-\*(#V'\z.\h'.2m+\*(#F'.\h'|\\n:u'\v'\*(#V'
+.ds 8 \h'\*(#H'\(*b\h'-\*(#H'
+.ds v \\k:\h'-(\\n(.wu*9/10-\*(#H)'\v'-\*(#V'\*(#[\s-4v\s0\v'\*(#V'\h'|\\n:u'\*(#]
+.ds _ \\k:\h'-(\\n(.wu*9/10-\*(#H+(\*(#F*2/3))'\v'-.4m'\z\(hy\v'.4m'\h'|\\n:u'
+.ds . \\k:\h'-(\\n(.wu*8/10)'\v'\*(#V*4/10'\z.\v'-\*(#V*4/10'\h'|\\n:u'
+.ds 3 \*(#[\v'.2m'\s-2\&3\s0\v'-.2m'\*(#]
+.ds o \\k:\h'-(\\n(.wu+\w'\(de'u-\*(#H)/2u'\v'-.3n'\*(#[\z\(de\v'.3n'\h'|\\n:u'\*(#]
+.ds d- \h'\*(#H'\(pd\h'-\w'~'u'\v'-.25m'\f2\(hy\fP\v'.25m'\h'-\*(#H'
+.ds D- D\\k:\h'-\w'D'u'\v'-.11m'\z\(hy\v'.11m'\h'|\\n:u'
+.ds th \*(#[\v'.3m'\s+1I\s-1\v'-.3m'\h'-(\w'I'u*2/3)'\s-1o\s+1\*(#]
+.ds Th \*(#[\s+2I\s-2\h'-\w'I'u*3/5'\v'-.3m'o\v'.3m'\*(#]
+.ds ae a\h'-(\w'a'u*4/10)'e
+.ds Ae A\h'-(\w'A'u*4/10)'E
+.ds oe o\h'-(\w'o'u*4/10)'e
+.ds Oe O\h'-(\w'O'u*4/10)'E
+.	\" corrections for vroff
+.if v .ds ~ \\k:\h'-(\\n(.wu*9/10-\*(#H)'\s-2\u~\d\s+2\h'|\\n:u'
+.if v .ds ^ \\k:\h'-(\\n(.wu*10/11-\*(#H)'\v'-.4m'^\v'.4m'\h'|\\n:u'
+.	\" for low resolution devices (crt and lpr)
+.if \n(.H>23 .if \n(.V>19 \
+\{\
+.	ds : e
+.	ds 8 ss
+.	ds v \h'-1'\o'\(aa\(ga'
+.	ds _ \h'-1'^
+.	ds . \h'-1'.
+.	ds 3 3
+.	ds o a
+.	ds d- d\h'-1'\(ga
+.	ds D- D\h'-1'\(hy
+.	ds th \o'bp'
+.	ds Th \o'LP'
+.	ds ae ae
+.	ds Ae AE
+.	ds oe oe
+.	ds Oe OE
+.\}
+.rm #[ #] #H #V #F C
+.SH "NAME"
+Statistics::LTU \-  An implementation of Linear Threshold Units
+.SH "SYNOPSIS"
+.PP
+.Vb 1
+\&    use Statistics::LTU;
+.Ve
+.Vb 1
+\&    my $acr_ltu = new ACR(3, 1);    # 3 attributes, scaled
+.Ve
+.Vb 5
+\&    $ltu->train([1,3,2], $LTU::PLUS);
+\&    $ltu->train([-1,3,0], $LTU::MINUS);
+\&    ...
+\&    print "LTU looks like this:\en";
+\&    $ltu->print;
+.Ve
+.Vb 5
+\&    print "[1,5,2] is in class ";
+\&    if ($ltu->test([1,5,2]) > LTU::THRESHOLD) { print "PLUS" } 
+\&                                         else { print "MINUS" };
+\&    $ltu->save("ACR.saved") or die "Save failed!";
+\&    $ltu2 = restore LTU("ACR.saved");
+.Ve
+.SH "EXPORTS"
+None
+.SH "DESCRIPTION"
+Statistics::LTU defines methods for creating, destroying, training and
+testing Linear Threshold Units.  A linear threshold unit is a 1-layer
+neural network, also called a perceptron.  LTU's are used
+to learn classifications from examples.
+.PP
+An LTU learns to distinguish between two classes based on the data
+given to it.  After training on a number of examples, the LTU can then
+be used to classify new (unseen) examples.  Technically, LTU's learn
+to distinguish two classes by fitting a hyperplane between them; if
+the examples have n features, the hyperplane will have n dimensions.
+In general, the LTU's weights will converge to a define the separating
+hyperplane.
+.PP
+The LTU.pm file defines an uninstantiable base class, LTU, and four
+other instantiable classes built on top of LTU.  The four 
+individual classes differs in the training rules used:
+.Ip "\s-1ACR\s0 \- Absolute Correction Rule" 5
+.Ip "\s-1TACR\s0 \- Thermal Absolute Correction Rule (thermal annealing)" 5
+.Ip "\s-1LMS\s0 \- Least Mean Squares rule" 5
+.Ip "\s-1RLS\s0 \- Recursive Least Squares rule" 5
+.PP
+Each of these training rules behaves somewhat differently.  Exact
+details of how these work are beyond the scope of this document; see
+the additional documentation file (\fIltu.doc\fR) for discussion.
+.SH "SCALARS"
+Three constants are provided for convenience.  \f(CW$LTU::PLUS\fR and \f(CW$LTU::MINUS\fR
+(+1 and \-1, respectively) may be passed to the \fBtrain\fR method.
+\f(CW$LTU::THRESHOLD\fR (set to zero) may be used to compare values returned from
+the \fBtest\fR method.
+.SH "METHODS"
+Each LTU has the following methods:
+.Ip "\fBnew \s-1TYPE\s0(n_features, scaling)\fR" 5
+Creates an \s-1LTU\s0 of the given \f(CWTYPE\fR.  \f(CWTYPE\fR must be \s-1ACR\s0,
+\s-1TACR\s0, \s-1LMS\s0 or \s-1RLS\s0.  \f(CWn_features\fR sets the number of attributes in
+the examples.  If \f(CWscaling\fR is 1, the \s-1LTU\s0 will automatically
+scale the input features to the range (\-1, +1).  For example:
+.Sp
+.Vb 1
+\&        $ACR_ltu = new ACR(5, 1);
+.Ve
+creates an \s-1LTU\s0 that will train using the absolute correction rule.  It
+will have 5 variables and scale features automatically.
+.Ip "\fBcopy\fR" 5
+Copies the \s-1LTU\s0 and returns the copy.
+.Ip "\fBdestroy\fR" 5
+Destroys the \s-1LTU\s0 (undefines its substructures).  This method is kept
+for compatibility; it's probably sufficient simply to call
+\fBundef($ltu)\fR.
+.Ip "\fBprint\fR" 5
+Prints a human-readable description of the \s-1LTU\s0, including the weights.
+.Ip "\fBsave(filename)\fR" 5
+Saves the \s-1LTU\s0 to the file \fIfilename\fR.  All the weights and necessary
+permanent data are saved.  Returns 1 if the \s-1LTU\s0 was saved
+successfully, else 0.
+.Ip "\fBrestore \s-1LTU\s0(filename)\fR" 5
+Static method.  Creates and returns a new \s-1LTU\s0 from \fIfilename\fR.
+The new \s-1LTU\s0 will be of the same type.
+.Ip "\fBtest(instance)\fR" 5
+Tests the \s-1LTU\s0 on \fIinstance\fR, the instance vector, which must be a
+reference to an array.  Returns the raw (non-thresholded) result.
+A typical use of this is:
+.Sp
+.Vb 5
+\&   if ($ltu->test($instance) >= $LTU::PLUS) {
+\&      # instance is in class 1
+\&   } else {
+\&      # instance is in class 2
+\&   }
+.Ve
+.Ip "\fBcorrectly_classifies(instance, realclass)\fR" 5
+Tests the \s-1LTU\s0 against an instance vector \fIinstance\fR, which must be a
+reference to an array.  \fIrealclass\fR must be a number.  Returns 1 if
+the \s-1LTU\s0 classifies \fIinstance\fR in the same class as \fIrealclass\fR.
+Technically: Returns 1 iff instance is on the \fIrealclass\fR side of the
+\s-1LTU\s0's hyperplane.
+.Ip "\fBweights\fR" 5
+Returns a reference to a copy of the \s-1LTU\s0's weights.
+.Ip "\fBset_origin_restriction(orig)\fR" 5
+Sets \s-1LTU\s0's origin restriction to \fIorig\fR, which should be 1 or 0.  If
+an \s-1LTU\s0 is origin-restricted, its hyperplane must pass through the
+origin (ie, so its intercept is zero).  This is usually used for
+preference predicates, whose classifications must be symmetrical.
+.Ip "\fBis_cycling(n)\fR" 5
+Returns 1 if the \s-1LTU\s0's weights seem to be cycling.  This is a
+heuristic test, based on whether the \s-1LTU\s0's weights have been pushed
+out in the past \fIn\fR training instances.  See comments with the code.
+.Ip "\fBversion\fR" 5
+Returns the version of the \s-1LTU\s0 implementation.
+.PP
+In addition to the methods above, each of the four classes of \s-1LTU\s0
+defines a \fBtrain\fR method.  The \fBtrain\fR method \*(L"trains\*(R" the \s-1LTU\s0 that
+an instance belongs in a particular class.  For each \fBtrain\fR method,
+\fIinstance\fR must be a reference to an array of numbers, and \fIvalue\fR
+must be a number.  For convenience, two constants are defined:
+\f(CW$LTU::PLUS\fR and \f(CW$LTU::MINUS\fR, set to +1 and \-1 respectively.
+These can be given as arguments to the \fBtrain\fR method.  A typical
+\fBtrain\fR call looks like:
+.PP
+.Vb 1
+\& $ltu->train([1,3,-5], $LTU::PLUS);
+.Ve
+which trains the \s-1LTU\s0 that the instance vector (1,3,\-5) should 
+be in the \s-1PLUS\s0 class.  
+.Ip "\(bu For \s-1ACR\s0: 	\fBtrain(instance, value)\fR" 5
+Returns 1 iff the \s-1LTU\s0 already classified the instance correctly, else 0.
+.Ip "\(bu For \s-1RLS\s0: 	\fBtrain(instance, value)\fR" 5
+Returns undef.
+.Ip "\(bu For \s-1LMS\s0: 	\fBtrain(instance, value, rho)\fR" 5
+Returns 1 if the \s-1LTU\s0 already classified the \fIinstance\fR correctly,
+else 0.  \fIRho\fR determines how much the weights are adjusted on each
+training instance.  It must be a positive number.
+.Ip "\(bu For \s-1TACR\s0: 	\fBtrain(instance, value, temperature, rate)\fR" 5
+Uses the thermal perceptron (absolute correction) rule to train the
+specified linear threshold unit on a particular instance_vector.  The
+instance_vector is a vector of numbers; each number is one
+attribute. The desired_value should be either \s-1LTU_PLUS\s0 (for positive
+instances) or \s-1LTU_MINUS\s0 (for negative instances).  The \fItemperature\fR
+and \fIrate\fR must be floating point numbers.
+.Sp
+This method returns 1 if the linear threshold unit already classified
+the instance correctly, otherwise it returns 0.  The \s-1TACR\s0 rule only
+trains on instances that it does not already classify correctly.
+.SH "AUTHOR"
+fawcett@nynexst.com (Tom Fawcett)
+.PP
+LTU.pm is based on a C implementation by James Callan at the
+University of Massachusetts.  His version has been in use for a long
+time, is stable, and seems to be bug-free.  This Perl module was
+created by Tom Fawcett, and any bugs you find were probably introduced
+in translation.  Send bugs, comments and suggestions to 
+\fIfawcett@nynexst.com\fR.
+.SH "BUGS"
+None known.  This Perl module has been moderately exercised but I
+don't guarantee anything.
+
+.rn }` ''
